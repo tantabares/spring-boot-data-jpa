@@ -36,7 +36,9 @@
 							<td th:text="${cliente.apellido}"></td>
 							<td th:text="${cliente.email}"></td>
 							<td th:text="${cliente.createdAt}"></td>
-							<td><a class="btn btn-primary btn-xs"
+							<td><a class="btn btn-success btn-xs"
+								th:href="@{/factura/form/} + ${cliente.id}" th:text="' + '"></a>
+								<a class="btn btn-primary btn-xs"
 								th:href="@{/ver/} + ${cliente.id}" th:text="'Ver'"></a> <a
 								class="btn btn-primary btn-xs"
 								th:href="@{/form/} + ${cliente.id}" th:text="'Editar'"></a> <a
